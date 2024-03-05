@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page</title>
+    <link rel="stylesheet" href="body.css">
+</head>
+<body>
+ <div class="container">
+<?php
+$uid = $_POST['userid'];
+$pw = $_POST['password'];
+if($uid == 'anish_07' and $pw == 'anish@2003')
+{    
+    session_start();
+    $_SESSION['sid']=session_id();
+    echo "<a href='signOut.php'>Sign Out</a><br>";
+    echo "<h2>Signed In Successfully!</h2><br>";
+    echo "<img src='me.jpg' class='blue'>";
+    echo "<h1>Welcome Master Anish!!!</h1>";
+
+}else
+{   
+    echo "<img src='cross.png' class='red'>";
+    echo "<h1>Wrong Password<h1>";
+    echo "<a href='form.php'><button class='btn'>Try Again</button></a>";
+}
+?>
+ </div>
+</body>
+</html>

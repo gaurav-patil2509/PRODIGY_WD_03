@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign Out Page</title>
+    <link rel="stylesheet" href="body.css">
+</head>
+<body>
+ <div class="container">
+<?php
+    echo "<img src='correct.png' class='blue'>";
+    echo "<h1>Signed Out Successfully</h1>";
+    session_start();
+    session_destroy();
+    echo "<a href='form.php'>Go to Sign In Form Page</a>";
+?>
+ </div>
+</body>
+</html>

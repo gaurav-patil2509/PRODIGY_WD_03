@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <meta charset="UTF-8"><br><br><br><br><br>
+ <title>JavaScript Functions</title>
+ </head>
+ <style type="text/css">
+ .center {
+ margin:auto;
+background:url(https://e1.pxfuel.com/desktop-wallpaper/850/763/desktop-wallpaper-ombreon-markinternational-info-peach.jpg);
+width:70%;
+border: 20px double #12caea ;
+border-radius :;
+padding: 50px;
+background-color: antiquewhite;
+}
+
+	
+h1{
+	text-decoration: underline;
+}
+button{
+	font-size: medium;
+	font-weight: bold;
+	background-color: burlywood;
+}
+ </style>
+ <body>
+ <div class="center">
+ <h1>JavaScript Functions</h1>
+
+ <h3><label for="string-input">Input a string:</label></h3>
+	<input type="text" id="string-input"><br><br>
+	<button id="string-length-btn">Calculate</button>
+	<p id="string-length"></p>
+
+	<h3><label for="number-input">Input a number:</label></h3>
+	<input type="number" id="number-input"><br><br>
+	<button id="number-reverse-btn">Reverse</button>
+	<p id="number-reverse"></p>
+	<script>
+		// Function to calculate the length of a string
+		function calculateStringLength() {
+			let input = document.getElementById("string-input").value;
+			let length = input.length;
+			document.getElementById("string-length").innerHTML = "Length of string: " + length;
+		}
+
+		// Function to reverse a number
+		function reverseNumber() {
+			let input = document.getElementById("number-input").value;
+			let reversedInput = parseInt(input.toString().split('').reverse().join(''));
+			document.getElementById("number-reverse").innerHTML = "Reversed number: " + reversedInput;
+		}
+
+		// Add event listeners to the buttons
+		document.getElementById("string-length-btn").addEventListener("click", calculateStringLength);
+		document.getElementById("number-reverse-btn").addEventListener("click", reverseNumber);
+	</script>
+
+ </div>
+ </body>
+</html>

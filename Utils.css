@@ -1,0 +1,33 @@
+.text-center
+{
+    text-align: center;
+}
+.bg-red{
+    background:black;
+}
+.mx-auto{
+    margin: auto;
+}
+.flex{
+   display: flex;
+   
+}
+.flex-col{
+   flex-direction: column;
+}
+.items-center{
+    justify-content: center;
+   align-items: center;
+}
+.container{
+    
+    margin-left: 12cm;
+    margin-right: 12cm;
+    border: 2px solid black;
+    border-radius: 10px;
+    height: 15cm;
+}
+.button2{
+    background-color: orange;
+}
+    
